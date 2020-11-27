@@ -1,0 +1,79 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.topDiv {
+  text-align: center;
+}
+
+.topDiv___titleBox {
+  margin: auto;
+}
+
+@media only screen and (min-width: 1360px) {
+  .topDiv___titleBox {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .topDiv___titleBox {
+    width: 100%;
+  }
+}
+
+.topDiv___titleBox___title {
+  font-size: 4em;
+  font-weight: 900;
+  margin: 10vh auto 0 auto;
+}
+
+.topDiv___titleBox___text {
+  font-size: 1.5em;
+}
+
+.imgBox {
+  width: 100%;
+  text-align: center;
+}
+
+.imgBox___image {
+  background-image: url(img/img3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 60%;
+  margin: auto;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container___form {
+  width: 90%;
+  height: 200vh;
+  margin: auto;
+}
+
+.btn {
+  color: white;
+  font-size: 1em;
+  font-weight: 900;
+  background: #47E6B1;
+  border: 1px solid #47E6B1;
+  padding: 15px 70px;
+  text-decoration: none;
+  border-radius: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 1px 1px 30px 5px #47E6B1;
+          box-shadow: 1px 1px 30px 5px #47E6B1;
+}
+/*# sourceMappingURL=style.css.map */
