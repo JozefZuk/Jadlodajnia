@@ -1,6 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .topDiv {
@@ -21,6 +22,12 @@ body {
   .topDiv___titleBox {
     width: 100%;
   }
+  .imgBox___image {
+    display: none;
+  }
+  .topDiv___titleBox___title {
+    font-size: 1em;
+  }
 }
 
 .topDiv___titleBox___title {
@@ -36,6 +43,7 @@ body {
 .imgBox {
   width: 100%;
   text-align: center;
+  margin: 0 auto 10vh auto !important;
 }
 
 .imgBox___image {
@@ -45,6 +53,10 @@ body {
   height: 70vh;
   width: 60%;
   margin: auto;
+}
+
+@media only screen and (max-width: 1360px) {
+  background-image: none;
 }
 
 .container {
