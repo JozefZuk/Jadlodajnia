@@ -7,16 +7,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Jadłodajnia Zapisy</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>  
     <div class="topDiv">
         <div class="topDiv___titleBox">
-            <h1 class="title">Szczęść Boże!</h1>
-            <p class="topDiv___titleBox___text">Jeżeli chcesz wstać w sobotę wczesnie rano, żeby pomagać innym to zapraszamy cię do jadłodajni</p>
-            <a class="btn" href="#form">Czytaj dalej</a>
+            <h1 class="title" data-aos="zoom-out-down" data-aos-duration="700"  data-aos-anchor-placement="center-center" data-aos-delay="500">Szczęść Boże!</h1>
+            <p class="topDiv___titleBox___text" data-aos="zoom-out-up"  data-aos-duration="500" data-aos-delay="500">Jeżeli chcesz wstać w sobotę wczesnie rano, żeby pomagać innym to zapraszamy cię do jadłodajni</p>
+            <div data-aos="zoom-in"  data-aos-duration="1500"><a class="btn" href="#form">Czytaj dalej</a></div>
         </div>
     </div>
-    <div class="imgBox">
+    <div class="imgBox" data-aos-delay="500" data-aos="zoom-out-up">
         <div class="imgBox___image" style="background-image: url(img/img.svg);"></div>
     </div>
     <div class="container" id="form">
@@ -24,7 +25,7 @@
     </div>
     <h3 class="smallTitle title">Najczęsciej zadawane pytania</h3>
     <div class="infoBox">
-        <div class="infoBox___box">
+        <div class="infoBox___box" data-aos="fade-left">
             <h2>Co oferujecie?</h2>
                 <p class="infoBox___box___text"> Wyżywienie (obfite śniadanie, i zupę na obiad.</p>
                 <p class="infoBox___box___text"> Miłą atmosferę w naszym zespole.</p>
@@ -40,7 +41,7 @@
                 <p class="infoBox___box___text">Spotykamy się w każdą sobote o godzinie 8:00 a kończymy około 12</p>
         </div>
      
-        <div class="infoBox___box">        
+        <div class="infoBox___box" data-aos="fade-right">        
             <h2>Czego wymagacie od uczestników?</h2>
                 <p class="infoBox___box___text">  Zaangażowania i pracowitości.</p>
                 <p class="infoBox___box___text"> Uczciwości i lojalności.</p>
@@ -62,5 +63,9 @@
     <br><br>
     <h3 class="smallTitle">Stronę stworzył <span class="bold">Józek Żukowski</span> a w redakcji tekstu pomagała <span class="bold">Wieronika Tietz</span></h3>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
