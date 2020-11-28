@@ -1,8 +1,9 @@
+html
+    scroll-behavior: smooth
+
 body
     font-family: 'Poppins', sans-serif
     margin: 0
-    scroll-behavior: smooth
-
 .topDiv
     text-align: center
 
@@ -12,6 +13,10 @@ body
 @media only screen and (min-width: 1360px)
     .topDiv___titleBox
         width: 50%
+    .infoBox
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 10px
   
 
 @media only screen and (max-width: 1360px)
@@ -19,10 +24,14 @@ body
         width: 100%
     .imgBox___image
         display: none 
-    .topDiv___titleBox___title
+    .title
         font-size: 1em
+    .infoBox
+        display: grid
+        grid-template-columns: repeat(1, 1fr)
+        grid-gap: 10px
 
-.topDiv___titleBox___title
+.title
     font-size: 4em
     font-weight: 900
     margin: 10vh auto 0 auto
@@ -37,24 +46,22 @@ body
     
 
 .imgBox___image
-    background-image: url(img/img3.png)
     background-size: contain
     background-repeat: no-repeat
     height: 70vh
     width: 60%
     margin: auto
 
-@media only screen and (max-width: 1360px)
-    background-image: none
 
 .container
     width: 100%
     min-height: 100vh
     text-align: center
+    margin-top: 10vh
 
 .container___form
     width: 90%
-    height: 200vh
+    height: 100vh
     margin: auto
 
 .btn
@@ -70,3 +77,17 @@ body
 
 .btn:hover
     box-shadow: 1px 1px 30px 5px #47E6B1
+
+.infoBox
+    padding: 5vh 5%
+
+.infoBox___box
+    padding: 0 5vw
+
+.infoBox___box____text
+    line-height: 2em
+.smallTitle
+    text-align: center
+.bold
+    font-weight: 900
+    color: #47E6B1
